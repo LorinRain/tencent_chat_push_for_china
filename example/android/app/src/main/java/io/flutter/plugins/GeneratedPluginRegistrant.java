@@ -26,11 +26,6 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin huawei_push, com.huawei.hms.flutter.push.PushPlugin", e);
     }
     try {
-      flutterEngine.getPlugins().add(new net.kikuchy.plain_notification_token.PlainNotificationTokenPlugin());
-    } catch(Exception e) {
-      Log.e(TAG, "Error registering plugin plain_notification_token, net.kikuchy.plain_notification_token.PlainNotificationTokenPlugin", e);
-    }
-    try {
       flutterEngine.getPlugins().add(new com.tencent.flutter.tim_ui_kit_push_plugin.TimUiKitPushPlugin());
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin tencent_chat_push_for_china, com.tencent.flutter.tim_ui_kit_push_plugin.TimUiKitPushPlugin", e);
