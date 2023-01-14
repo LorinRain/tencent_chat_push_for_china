@@ -1,0 +1,48 @@
+-keep class com.baidu.** {*;}
+-keep class vi.com.** {*;}
+-keep class com.baidu.vi.** {*;}
+-keep class com.tencent.flutter.tuikit.** {*;}
+-dontwarn com.baidu.**
+-ignorewarnings
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable
+-keep class com.hianalytics.android.**{*;}
+-keep class com.huawei.updatesdk.**{*;}
+-keep class com.huawei.hms.**{*;}
+-keep class com.xiaomi.**{*;}
+-keep class com.tencent.flutter.tim_ui_kit_push_plugin.receiver.XIAOMIPushImpl {*;}
+-dontwarn com.meizu.cloud.pushsdk.**
+-keep class com.meizu.cloud.pushsdk.**{*;}
+-dontwarn com.vivo.push.**
+-keep class com.vivo.push.**{*; }
+-keep class com.vivo.vms.**{*; }
+-keep public class * extends android.app.Service
+-keep class com.heytap.mcssdk.** {*;}
+-keep class com.heytap.msp.push.** { *;}
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+
+-keep class com.tencent.android.tpush.** {*;}
+-keep class com.tencent.bigdata.baseapi.** {*;}
+-keep class com.tencent.bigdata.mqttchannel.** {*;}
+
+-keep class io.flutter.app.** { *; }
+-keep class io.flutter.plugin.**  { *; }
+-keep class io.flutter.util.**  { *; }
+-keep class io.flutter.view.**  { *; }
+-keep class io.flutter.**  { *; }
+-keep class io.flutter.plugins.**  { *; }
+-dontwarn io.flutter.embedding.**
+-keep class com.huawei.hms.flutter.** { *; }
+-repackageclasses
+
+-ignorewarnings
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable

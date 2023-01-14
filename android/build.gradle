@@ -1,0 +1,94 @@
+group 'com.tencent.flutter.tim_ui_kit_push_plugin'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.6.10'
+    repositories {
+        flatDir {
+            dirs project(':tencent_chat_push_for_china').file('libs')
+        }
+        flatDir {
+            dirs 'libs'
+        }
+        maven {url 'https://developer.huawei.com/repo/'}
+        maven { url 'https://developer.hihonor.com/repo/' }
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.huawei.agconnect:agcp:1.4.2.301'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        flatDir {
+            dirs project(':tencent_chat_push_for_china').file('libs')
+        }
+
+        flatDir {
+            dirs 'libs'
+        }
+        maven {url 'https://developer.huawei.com/repo/'}
+        maven { url 'https://developer.hihonor.com/repo/' }
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'commons-codec:commons-codec:1.6'
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+    // HMS Core Push 模块依赖包
+    implementation 'com.huawei.hms:push:5.0.2.300'
+
+    //XIAOMI
+    implementation (name: 'MiPush_SDK_Client_5_0_5-C_3rd', ext: 'aar')
+
+    //MEIZU
+    implementation 'com.meizu.flyme.internet:push-internal:4.1.4'
+
+    //VIVO
+    implementation(name: 'vivo_pushSDK_v3.0.0.4_484', ext: 'aar')
+
+    //OPPO
+    implementation(name: 'push-3.0.0', ext: 'aar')
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'commons-codec:commons-codec:1.6'
+    implementation 'androidx.annotation:annotation:1.1.0'
+
+    //Honor
+    implementation 'com.hihonor.mcs:push:7.0.1.103'
+
+
+}

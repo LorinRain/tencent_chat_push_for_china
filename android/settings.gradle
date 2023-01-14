@@ -1,0 +1,2 @@
+rootProject.name = 'tim_ui_kit_push_plugin'
+include ':tim_ui_kit_push_plugin'
