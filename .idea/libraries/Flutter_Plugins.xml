@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_push-6.5.0+300" />
-      <root url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-9.7.0" />
-      <root url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/plain_notification_token-0.0.4" />
       <root url="file://$PROJECT_DIR$" />
-      <root url="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_apns_only-1.6.0" />
-      <root url="file://$USER_HOME$/flutter/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.5.0+300" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_local_notifications-9.9.1" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_apns_only-1.6.0" />
+      <root url="file://$USER_HOME$/.pub-cache/git/plain_notification_token-3ad704ef37ab0f30f8e088085f0f4ecdbb3730c5" />
+      <root url="file://$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

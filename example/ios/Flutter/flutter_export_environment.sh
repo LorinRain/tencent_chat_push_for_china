@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/Jinyu/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/Jinyu/Desktop/tencent_chat_push_for_china/example"
+export "FLUTTER_APPLICATION_PATH=/Users/Jinyu/WorkCodes/tencent_chat_push_for_china/example"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"

@@ -1,7 +1,7 @@
 # This is a generated file; do not edit or check into version control.
-flutter_apns_only=/Users/Jinyu/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_apns_only-1.6.0/
-flutter_local_notifications=/Users/Jinyu/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-9.9.1/
-huawei_push=/Users/Jinyu/flutter/.pub-cache/hosted/pub.dartlang.org/huawei_push-6.5.0+300/
-plain_notification_token=/Users/Jinyu/flutter/.pub-cache/git/plain_notification_token-3ad704ef37ab0f30f8e088085f0f4ecdbb3730c5/
+flutter_apns_only=/Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_apns_only-1.6.0/
+flutter_local_notifications=/Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications-9.9.1/
+huawei_push=/Users/Jinyu/.pub-cache/hosted/pub.dev/huawei_push-6.5.0+300/
+plain_notification_token=/Users/Jinyu/.pub-cache/git/plain_notification_token-3ad704ef37ab0f30f8e088085f0f4ecdbb3730c5/
 tencent_chat_push_for_china=/Users/Jinyu/WorkCodes/tencent_chat_push_for_china/
-tencent_im_sdk_plugin=/Users/Jinyu/flutter/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/
+tencent_im_sdk_plugin=/Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/
