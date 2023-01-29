@@ -112,12 +112,17 @@ public class ChannelPushManager {
     }
 
     public String getPushToken() {
-        String token = channelUtils.getToken();
-        if(token.isEmpty() && DeviceInfoUtil.isBrandHonor()){
-            token = HONORPushImpl.honorToken;
+        try {
+            String token = channelUtils.getToken();
+            if(token.isEmpty() && DeviceInfoUtil.isBrandHonor()){
+                token = HONORPushImpl.honorToken;
+            }
+            Log.i(TAG, "getPushToken, Token: " + token);
+            return token;
+        } catch (Exception e) {
+            Log.i(TAG, "Get Token Failed! Please refer to our documentation to troubleshoot this error.");
+            return "";
         }
-        Log.i(TAG, "getPushToken, Token: " + token);
-        return token;
     }
 
     public void initChannel() {
