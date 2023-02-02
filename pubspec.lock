@@ -204,10 +204,10 @@ packages:
     dependency: "direct main"
     description:
       name: huawei_push
-      sha256: "8fcd8d11d1c16df839a3478c7b011b27aad5b2ca3a6374b2ad40cf5c80a58c7f"
+      sha256: a4d0adab05d76ab70240d7b37863a9d180e4b2d69ec4b7f52cb322386cb21d10
       url: "https://pub.dev"
     source: hosted
-    version: "6.5.0+300"
+    version: "6.7.0+300"
   js:
     dependency: transitive
     description:
@@ -473,5 +473,5 @@ packages:
     source: hosted
     version: "3.1.1"
 sdks:
-  dart: ">=2.18.0 <4.0.0"
+  dart: ">=2.18.0 <3.0.0"
   flutter: ">=3.0.0"

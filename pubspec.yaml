@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
   flutter_apns_only: ^1.6.0
   flutter_local_notifications: 9.9.1
-  huawei_push: ^6.5.0+300
+  huawei_push: 6.7.0+300
   plain_notification_token:
     git: git@e.coding.net:micropoplar/proj-ourschool/plain_notification_token.git
   tencent_im_base:

@@ -165,7 +165,7 @@
     },
     {
       "name": "huawei_push",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/huawei_push-6.5.0+300",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -380,7 +380,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-01-28T06:07:58.296896Z",
+  "generated": "2023-02-02T08:40:33.061880Z",
   "generator": "pub",
-  "generatorVersion": "2.19.0"
+  "generatorVersion": "2.19.1"
 }
