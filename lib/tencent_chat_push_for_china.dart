@@ -1,16 +1,17 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:tencent_chat_push_for_china/channel/apple_apns_impl.dart';
 import 'package:tencent_chat_push_for_china/channel/flutter_push_base_impl.dart';
 import 'package:tencent_chat_push_for_china/channel/huawei_apns_impl.dart';
+import 'package:tencent_chat_push_for_china/model/app_info.dart';
 import 'package:tencent_chat_push_for_china/model/push_device_config.dart';
-import 'package:tencent_im_base/class/tencent_im_class.dart';
-import 'package:tencent_im_base/tencent_im_base.dart';
-import 'package:tencent_chat_push_for_china/model/appInfo.dart';
-import 'package:tencent_chat_push_for_china/channel/apple_apns_impl.dart';
 import 'package:tencent_chat_push_for_china/utils/local_notification.dart';
 import 'package:tencent_chat_push_for_china/utils/utils.dart';
-import 'dart:io' show Platform;
+import 'package:tencent_im_base/class/tencent_im_class.dart';
+import 'package:tencent_im_base/tencent_im_base.dart';
 
 typedef PushClickAction = void Function(Map<String, dynamic> msg);
 
@@ -36,14 +37,14 @@ class TimUiKitPushPlugin extends TencentIMClass {
   /// [Developers should not use this field directly] Determine whether to execute the push logic in the Dart layer
   bool isUseFlutterPlugin = false;
 
-  /// [Developers should not use this field directly] Create the nitification from local.
+  /// [Developers should not use this field directly] Create the notification from local.
   final LocalNotification localNotification = LocalNotification();
 
   /// [Developers should not use this field directly] Constructor, initialize the plug-in
   _initPlugin() async {
     _channel.setMethodCallHandler(_handleMethod);
     if (Platform.isIOS) {
-      print("TUIKitPush | Dart Plugin | USE_iOS");
+      debugPrint("TUIKitPush | Dart Plugin | USE_iOS");
       isUseFlutterPlugin = true;
       flutterPush = AppleAPNSImpl();
     }
@@ -61,8 +62,9 @@ class TimUiKitPushPlugin extends TencentIMClass {
     }
     switch (call.method) {
       case "TIMPushClickAction":
-        print(
-            "TUIKitPush | Dart Plugin | on_handleMethod | TIMPushClickAction");
+        debugPrint(
+          "TUIKitPush | Dart Plugin | on_handleMethod | TIMPushClickAction",
+        );
         return onClickNotification!(call.arguments.cast<String, dynamic>());
       default:
         throw UnsupportedError("Unrecongnized Event");
@@ -94,7 +96,9 @@ class TimUiKitPushPlugin extends TencentIMClass {
     final res = await TencentImSDKPlugin.v2TIMManager
         .getOfflinePushManager()
         .setOfflinePushConfig(
-        businessID: businessID?.toDouble() ?? 0, token: "");
+          businessID: businessID?.toDouble() ?? 0,
+          token: "",
+        );
     if (res.code == 0) {
       return true;
     } else {
@@ -103,23 +107,29 @@ class TimUiKitPushPlugin extends TencentIMClass {
     }
   }
 
-  /// Initialize the push capobility for each channel
-  Future<bool> init(
-      {required PushClickAction pushClickAction, PushAppInfo? appInfo}) async {
+  /// Initialize the push capability for each channel
+  Future<bool> init({
+    required PushClickAction pushClickAction,
+    PushAppInfo? appInfo,
+  }) async {
     final res = await TencentImSDKPlugin.v2TIMManager.getLoginUser();
-    if(res.code != 0){
-      print("Make sure you initilize this plugin, after logging to Tencent IM.");
+
+    if (res.code != 0) {
+      debugPrint(
+        "Make sure you initialize this plugin, after logging to Tencent IM.",
+      );
       return false;
     }
-    if (Platform.isAndroid &&
-        await _channel.invokeMethod("isEmuiRom")) {
-      // 因华为需要使用native异步校验，放到这边进行
+
+    if (Platform.isAndroid && await _channel.invokeMethod("isEmuiRom")) {
+      /// 因华为需要使用native异步校验，放到这边进行
       print("TUIKitPush | Dart Plugin | USE HUAWEI");
       isUseFlutterPlugin = true;
       flutterPush = HuaweiImpl();
     }
 
-    print("TUIKitPush | DART | INIT, isUseFlutterPlugin: $isUseFlutterPlugin");
+    debugPrint(
+        "TUIKitPush | DART | INIT, isUseFlutterPlugin: $isUseFlutterPlugin");
     onClickNotification = pushClickAction;
 
     if (isUseFlutterPlugin) {
@@ -148,35 +158,35 @@ class TimUiKitPushPlugin extends TencentIMClass {
   }
 
   /// Show a notification manually
-  void displayNotification(
-      {
+  void displayNotification({
+    /// Channel ID for Android device
+    required String channelID,
 
-      /// Channel ID for Android device
-      required String channelID,
+    /// Channel name for Android device
+    required String channelName,
 
-      /// Channel name for Android device
-      required String channelName,
+    /// Channel description for Android device
+    String? channelDescription,
 
-      /// Channel description for Android device
-      String? channelDescription,
+    /// The title of the notification, shows in the first line generally
+    required String title,
 
-      /// The title of the notification, shows in the first line generally
-      required String title,
+    /// The body of the notification, shows in the second line generally
+    required String body,
 
-      /// The body of the notification, shows in the second line generally
-      required String body,
-
-      /// External information, you may choose to use JSON, for facilating dealing with onClick notification.
-      String? ext}) async {
+    /// External information, you may choose to use JSON, for facilating dealing with onClick notification.
+    String? ext,
+  }) async {
     if (!(await checkStatus())) {
       return;
     }
     localNotification.displayNotification(
-        channelID: channelID,
-        channelName: channelName,
-        title: title,
-        ext: ext,
-        body: body);
+      channelID: channelID,
+      channelName: channelName,
+      title: title,
+      ext: ext,
+      body: body,
+    );
   }
 
   /// Create and show a notification for message by default format,
@@ -230,20 +240,22 @@ class TimUiKitPushPlugin extends TencentIMClass {
     String token = "";
     try {
       if (isUseFlutterPlugin) {
-        print("TUIKitPush | Dart | getTokenByFlutter");
+        debugPrint("TUIKitPush | Dart | getTokenByFlutter");
         token = await flutterPush.getToken() ?? flutterPush.token;
-        print("TUIKitPush | Dart | getTokenByFlutter | DeviceToken: $token");
+        debugPrint(
+            "TUIKitPush | Dart | getTokenByFlutter | DeviceToken: $token");
       } else {
-        print("TUIKitPush | Dart | getTokenByNative");
+        debugPrint("TUIKitPush | Dart | getTokenByNative");
         token = await _channel.invokeMethod("getPushToken");
-        print("TUIKitPush | Dart | getTokenByNative | DeviceToken: $token");
+        debugPrint(
+            "TUIKitPush | Dart | getTokenByNative | DeviceToken: $token");
       }
     } catch (err) {
-      print("getDevicePushToken err $err");
+      debugPrint("getDevicePushToken err $err");
     }
-    if(token.isEmpty && times < 10){
+    if (token.isEmpty && times < 10) {
       times++;
-      return await Future.delayed(const Duration(seconds: 2), ()async{
+      return await Future.delayed(const Duration(seconds: 2), () async {
         return await getDevicePushToken(times);
       });
     }
@@ -262,7 +274,7 @@ class TimUiKitPushPlugin extends TencentIMClass {
       return appInfo.apple_buz_id;
     }
     String device = await getOtherPushType() ?? "";
-    print("TUIKitPush | Dart | getOtherPushType | device: $device");
+    debugPrint("TUIKitPush | Dart | getOtherPushType | device: $device");
     switch (device) {
       case 'oppo':
       case 'oneplus':
@@ -327,10 +339,11 @@ class TimUiKitPushPlugin extends TencentIMClass {
   }
 
   /// Create notification channel, only works for Android device
-  void createNotificationChannel(
-      {required String channelId,
-      required String channelName,
-      required String channelDescription}) async {
+  void createNotificationChannel({
+    required String channelId,
+    required String channelName,
+    required String channelDescription,
+  }) async {
     if (Platform.isAndroid) {
       _channel.invokeMethod("createNotificationChannel", {
         "channelId": channelId,

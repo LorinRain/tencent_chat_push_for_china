@@ -1,9 +1,8 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:tencent_chat_push_for_china/model/appInfo.dart';
-import 'dart:async';
-
+import 'package:tencent_chat_push_for_china/model/app_info.dart';
 import 'package:tencent_chat_push_for_china/tencent_chat_push_for_china.dart';
 
 void main() {
@@ -18,7 +17,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   void initState() {
     super.initState();
@@ -78,7 +76,7 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
-class ChannelPush{
+class ChannelPush {
   static final TimUiKitPushPlugin cPush = TimUiKitPushPlugin();
 
   static init(PushClickAction pushClickAction) async {
@@ -93,8 +91,7 @@ class ChannelPush{
         channelId: "new_message",
         channelName: "chat_message",
         channelDescription:
-            "The notification for chat message from Tencent Cloud IM"
-    );
+            "The notification for chat message from Tencent Cloud IM");
 
     // require the permission for notification
     cPush.requireNotificationPermission();
@@ -105,8 +102,7 @@ class ChannelPush{
   }
 }
 
-class PushConfig{
-
+class PushConfig {
   //These `Business ID` can be found in the offline push section for each manufacturers,
   // on the main page of console from Tencent Cloud IM.
 
@@ -139,10 +135,8 @@ class PushConfig{
   static const String OPPOPushAPPID = "";
   static const String OPPOChannelID = "new_message";
 
-
   // Business ID for Apple APNS
   static const ApplePushBuzID = 0;
-
 
   static final PushAppInfo appInfo = PushAppInfo(
       hw_buz_id: PushConfig.HWPushBuzID,
@@ -157,6 +151,5 @@ class PushConfig{
       oppo_app_secret: PushConfig.OPPOPushAPPSECRET,
       oppo_buz_id: PushConfig.OPPOPushBuzID,
       oppo_app_id: PushConfig.OPPOPushAPPID,
-      apple_buz_id: PushConfig.ApplePushBuzID
-  );
+      apple_buz_id: PushConfig.ApplePushBuzID);
 }

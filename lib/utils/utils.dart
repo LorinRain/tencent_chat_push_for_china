@@ -1,12 +1,14 @@
 import 'package:flutter/services.dart';
+import 'package:tencent_chat_push_for_china/model/app_info.dart';
 import 'package:tencent_im_base/tencent_im_base.dart';
 
-import '../model/appInfo.dart';
-
-class Utils{
+class Utils {
   /// Set appinfo for each channel manualy
-  static Future<void> setAppInfoForChannel(MethodChannel _channel, PushAppInfo appInfo) async {
-    if(await _channel.invokeMethod("isOppoRom") && appInfo.oppo_app_key != null && appInfo.oppo_app_secret != null){
+  static Future<void> setAppInfoForChannel(
+      MethodChannel _channel, PushAppInfo appInfo) async {
+    if (await _channel.invokeMethod("isOppoRom") &&
+        appInfo.oppo_app_key != null &&
+        appInfo.oppo_app_secret != null) {
       await _channel.invokeMethod("setOppoPushAppId", {
         "appId": appInfo.oppo_app_key!,
       });
@@ -14,7 +16,9 @@ class Utils{
         "appKey": appInfo.oppo_app_secret!,
       });
       return;
-    }else if(await _channel.invokeMethod("isMiuiRom") && appInfo.mi_app_id != null && appInfo.mi_app_key != null){
+    } else if (await _channel.invokeMethod("isMiuiRom") &&
+        appInfo.mi_app_id != null &&
+        appInfo.mi_app_key != null) {
       print("TUIKitPush | init | setMiPushAppId");
       await _channel.invokeMethod("setMiPushAppId", {
         "appId": appInfo.mi_app_id!,
@@ -24,7 +28,9 @@ class Utils{
         "appKey": appInfo.mi_app_key!,
       });
       return;
-    }else if(await _channel.invokeMethod("isMeizuRom") && appInfo.mz_app_id != null && appInfo.mz_app_key != null){
+    } else if (await _channel.invokeMethod("isMeizuRom") &&
+        appInfo.mz_app_id != null &&
+        appInfo.mz_app_key != null) {
       await _channel.invokeMethod("setMzPushAppId", {
         "appId": appInfo.mz_app_id!,
       });
@@ -35,7 +41,7 @@ class Utils{
     }
   }
 
-  static String createExtForMessage(V2TimMessage message){
+  static String createExtForMessage(V2TimMessage message) {
     String createJSON(String convID) {
       return "{\"conversationID\": \"$convID\"}";
     }
@@ -47,7 +53,7 @@ class Utils{
     return ext;
   }
 
-  static String getMessageSummary(V2TimMessage message){
+  static String getMessageSummary(V2TimMessage message) {
     String messageSummary = "";
     switch (message.elemType) {
       case MessageElemType.V2TIM_ELEM_TYPE_CUSTOM:
