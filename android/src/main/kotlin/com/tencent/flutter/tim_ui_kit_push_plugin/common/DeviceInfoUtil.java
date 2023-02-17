@@ -8,6 +8,8 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.text.TextUtils;
 
+import com.hihonor.push.sdk.HonorPushClient;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,11 +32,20 @@ public class DeviceInfoUtil {
         return Build.MODEL;
     }
 
+    /* 检查是否支持荣耀推送 */
+    private static boolean checkSupportHonorPush() {
+        return false;
+    }
+
     /* 获取手机厂商 */
     public static String getManufacturers() {
         String mf = Build.MANUFACTURER;
         if (!TextUtils.isEmpty(mf)) {
             mf = mf.trim().toLowerCase();
+        }
+        // 如果是荣耀，但是不支持荣耀推送，则统一按照华为处理
+        if ("honor".equalsIgnoreCase(mf) && !checkSupportHonorPush()) {
+            mf = "huawei";
         }
         return mf;
     }
@@ -109,13 +120,12 @@ public class DeviceInfoUtil {
     }
 
     public static boolean isBrandHuaWei() {
-        String property = getSystemProperty("ro.build.version.emui");
         return "huawei".equalsIgnoreCase(Build.MANUFACTURER)
-                || !TextUtils.isEmpty(property);
+                || ("honor".equalsIgnoreCase(Build.MANUFACTURER) && !checkSupportHonorPush());
     }
 
     public static boolean isBrandHonor() {
-        return "honor".equalsIgnoreCase(Build.MANUFACTURER);
+        return "honor".equalsIgnoreCase(Build.MANUFACTURER) && checkSupportHonorPush();
     }
 
     public static boolean isMeizuRom() {

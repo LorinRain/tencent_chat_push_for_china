@@ -67,36 +67,39 @@ public class ChannelPushManager {
         return mf;
     }
 
-    private ChannelPushManager(Context context) {
-        Log.i(TAG, "start");
-        mContext = context;
+    ChannelBaseUtils getChannelUtils() {
         if (channelUtils == null) {
             String deviceType = checkDevice();
             Log.i(TAG, "deviceType: " + deviceType);
             if (DeviceInfoUtil.isMiuiRom()) {
                 Log.i(TAG, "USE xiaomi");
-                channelUtils = new XiaoMiUtils(context);
+                channelUtils = new XiaoMiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHuaWei()) {
                 Log.i(TAG, "USE Huawei");
-                channelUtils = new HuaweiUtils(context);
+                channelUtils = new HuaweiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHonor()) {
                 Log.i(TAG, "USE Honor");
-                channelUtils = new HonorUtils(context);
+                channelUtils = new HonorUtils(mContext);
             } else if (DeviceInfoUtil.isMeizuRom()) {
                 Log.i(TAG, "USE Meizu");
-                channelUtils = new MeizuUtils(context);
+                channelUtils = new MeizuUtils(mContext);
             } else if (DeviceInfoUtil.isOppoRom()) {
                 Log.i(TAG, "USE oppo");
-                channelUtils = new OppoUtils(context);
+                channelUtils = new OppoUtils(mContext);
             } else if (DeviceInfoUtil.isVivoRom()) {
                 Log.i(TAG, "USE vivo");
-                channelUtils = new VivoUtils(context);
+                channelUtils = new VivoUtils(mContext);
             } else {
                 Log.i(TAG, "USE default, deviceType:" + deviceType);
-                channelUtils = new DefaultUtils(context);
+                channelUtils = new DefaultUtils(mContext);
             }
         }
+        return channelUtils;
+    }
 
+    private ChannelPushManager(Context context) {
+        Log.i(TAG, "start");
+        mContext = context;
     }
 
     public static ChannelPushManager getInstance(Context context) {
@@ -113,7 +116,7 @@ public class ChannelPushManager {
 
     public String getPushToken() {
         try {
-            String token = channelUtils.getToken();
+            String token = getChannelUtils().getToken();
             if(token.isEmpty() && DeviceInfoUtil.isBrandHonor()){
                 token = HONORPushImpl.honorToken;
             }
@@ -127,19 +130,19 @@ public class ChannelPushManager {
 
     public void initChannel() {
         String deviceType = checkDevice();
-        Log.i(TAG, "initChannel, device: " + deviceType + "; channelUtils: " + channelUtils.toString());
-        channelUtils.initChannel();
+        Log.i(TAG, "initChannel, device: " + deviceType);
+        getChannelUtils().initChannel();
     }
 
     public void requireNotificationPermission() {
-        channelUtils.requirePermission();
+        getChannelUtils().requirePermission();
     }
 
     public void setBadgeNum(final int setNum) {
-        channelUtils.setBadgeNum(setNum);
+        getChannelUtils().setBadgeNum(setNum);
     }
 
     public void clearAllNotification() {
-        channelUtils.clearAllNotification();
+        getChannelUtils().clearAllNotification();
     }
 }
