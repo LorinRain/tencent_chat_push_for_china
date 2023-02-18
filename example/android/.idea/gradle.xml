@@ -10,7 +10,7 @@
         <option name="modules">
           <set>
             <option value="$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/android" />
-            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_local_notifications-9.9.1/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_local_notifications-13.0.0/android" />
             <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300/android" />
             <option value="$PROJECT_DIR$/../../android" />
             <option value="$PROJECT_DIR$" />

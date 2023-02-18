@@ -1,5 +1,6 @@
 package com.tencent.flutter.tim_ui_kit_push_plugin.common;
 
+import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -9,6 +10,7 @@ import android.os.Build;
 import android.text.TextUtils;
 
 import com.hihonor.push.sdk.HonorPushClient;
+import com.tencent.flutter.tim_ui_kit_push_plugin.channelUtils.HonorUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +22,8 @@ import io.flutter.Log;
  * 获取系统设备信息的工具类
  */
 public class DeviceInfoUtil {
+    public static Context context = null;
+
     public static String TAG = "TUIKitPush | DeviceInfoUtil";
 
     /* 获取操作系统版本号 */
@@ -32,20 +36,12 @@ public class DeviceInfoUtil {
         return Build.MODEL;
     }
 
-    /* 检查是否支持荣耀推送 */
-    private static boolean checkSupportHonorPush() {
-        return false;
-    }
 
     /* 获取手机厂商 */
     public static String getManufacturers() {
         String mf = Build.MANUFACTURER;
         if (!TextUtils.isEmpty(mf)) {
             mf = mf.trim().toLowerCase();
-        }
-        // 如果是荣耀，但是不支持荣耀推送，则统一按照华为处理
-        if ("honor".equalsIgnoreCase(mf) && !checkSupportHonorPush()) {
-            mf = "huawei";
         }
         return mf;
     }
@@ -120,12 +116,15 @@ public class DeviceInfoUtil {
     }
 
     public static boolean isBrandHuaWei() {
-        return "huawei".equalsIgnoreCase(Build.MANUFACTURER)
-                || ("honor".equalsIgnoreCase(Build.MANUFACTURER) && !checkSupportHonorPush());
+        return "huawei".equalsIgnoreCase(Build.MANUFACTURER);
+    }
+
+    public static boolean isBrandHonorUseHuaweiPush() {
+        return isBrandHonor() && !HonorUtils.checkSupportHonorPush(context);
     }
 
     public static boolean isBrandHonor() {
-        return "honor".equalsIgnoreCase(Build.MANUFACTURER) && checkSupportHonorPush();
+        return "honor".equalsIgnoreCase(Build.MANUFACTURER);
     }
 
     public static boolean isMeizuRom() {

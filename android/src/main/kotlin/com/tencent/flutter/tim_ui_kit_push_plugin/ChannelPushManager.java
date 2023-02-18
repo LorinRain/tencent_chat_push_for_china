@@ -31,7 +31,7 @@ public class ChannelPushManager {
 
     private static volatile ChannelPushManager instance = null;
 
-    private static volatile ChannelBaseUtils channelUtils = null;
+    public static volatile ChannelBaseUtils channelUtils = null;
 
     private Context mContext = null;
 
@@ -59,23 +59,16 @@ public class ChannelPushManager {
         oppoAppkey = appkey;
     }
 
-    public static String checkDevice() {
-        String mf = Build.MANUFACTURER;
-        if (!TextUtils.isEmpty(mf)) {
-            mf = mf.trim().toLowerCase();
-        }
-        return mf;
-    }
-
     ChannelBaseUtils getChannelUtils() {
         if (channelUtils == null) {
-            String deviceType = checkDevice();
-            Log.i(TAG, "deviceType: " + deviceType);
             if (DeviceInfoUtil.isMiuiRom()) {
                 Log.i(TAG, "USE xiaomi");
                 channelUtils = new XiaoMiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHuaWei()) {
                 Log.i(TAG, "USE Huawei");
+                channelUtils = new HuaweiUtils(mContext);
+            } else if (DeviceInfoUtil.isBrandHonorUseHuaweiPush()) {
+                Log.i(TAG, "USE Huawei for honor");
                 channelUtils = new HuaweiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHonor()) {
                 Log.i(TAG, "USE Honor");
@@ -90,7 +83,7 @@ public class ChannelPushManager {
                 Log.i(TAG, "USE vivo");
                 channelUtils = new VivoUtils(mContext);
             } else {
-                Log.i(TAG, "USE default, deviceType:" + deviceType);
+                Log.i(TAG, "USE deviceType:");
                 channelUtils = new DefaultUtils(mContext);
             }
         }
@@ -100,6 +93,7 @@ public class ChannelPushManager {
     private ChannelPushManager(Context context) {
         Log.i(TAG, "start");
         mContext = context;
+        DeviceInfoUtil.context = context;
     }
 
     public static ChannelPushManager getInstance(Context context) {
@@ -129,8 +123,7 @@ public class ChannelPushManager {
     }
 
     public void initChannel() {
-        String deviceType = checkDevice();
-        Log.i(TAG, "initChannel, device: " + deviceType);
+        Log.i(TAG, "initChannel");
         getChannelUtils().initChannel();
     }
 
