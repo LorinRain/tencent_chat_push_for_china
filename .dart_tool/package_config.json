@@ -123,7 +123,7 @@
     },
     {
       "name": "flutter_local_notifications",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications-13.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/flutter_local_notifications-3859c6b637bdf3535455a1a900b3b0aea3bbdd19/",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -368,7 +368,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-02-17T11:43:11.632491Z",
+  "generated": "2023-02-18T01:48:00.621386Z",
   "generator": "pub",
   "generatorVersion": "2.19.2"
 }

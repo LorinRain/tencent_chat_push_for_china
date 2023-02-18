@@ -12,7 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_apns_only: 1.6.0
-  flutter_local_notifications: 13.0.0
+  flutter_local_notifications:
+    git: git@github.com:hellohejinyu/flutter_local_notifications.git
   huawei_push: 6.7.0+300
   plain_notification_token:
     git: git@e.coding.net:micropoplar/proj-ourschool/plain_notification_token.git
