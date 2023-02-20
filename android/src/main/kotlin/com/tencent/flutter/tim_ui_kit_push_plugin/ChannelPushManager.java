@@ -29,6 +29,8 @@ public class ChannelPushManager {
 
     public static String token = "";
 
+    private static boolean useHuaweiPushService = false;
+
     private static volatile ChannelPushManager instance = null;
 
     public static volatile ChannelBaseUtils channelUtils = null;
@@ -71,8 +73,13 @@ public class ChannelPushManager {
                 Log.i(TAG, "USE Huawei for honor");
                 channelUtils = new HuaweiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHonor()) {
-                Log.i(TAG, "USE Honor");
-                channelUtils = new HonorUtils(mContext);
+                if (useHuaweiPushService) {
+                    Log.i(TAG, "USE Huawei by settings");
+                    channelUtils = new HuaweiUtils(mContext);
+                } else {
+                    Log.i(TAG, "USE Honor");
+                    channelUtils = new HonorUtils(mContext);
+                }
             } else if (DeviceInfoUtil.isMeizuRom()) {
                 Log.i(TAG, "USE Meizu");
                 channelUtils = new MeizuUtils(mContext);
@@ -122,8 +129,9 @@ public class ChannelPushManager {
         }
     }
 
-    public void initChannel() {
-        Log.i(TAG, "initChannel");
+    public void initChannel(boolean _useHuaweiPushService) {
+        useHuaweiPushService = _useHuaweiPushService;
+        Log.i(TAG, "initChannel useHuaweiPushService: " + useHuaweiPushService);
         getChannelUtils().initChannel();
     }
 

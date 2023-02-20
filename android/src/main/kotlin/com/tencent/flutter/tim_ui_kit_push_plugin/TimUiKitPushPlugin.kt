@@ -35,7 +35,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     Log.i(TAG, "onAttachedToEngine")
-    var newChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "tim_ui_kit_push_plugin")
+    val newChannel = MethodChannel(flutterPluginBinding.binaryMessenger, "tim_ui_kit_push_plugin")
     newChannel.setMethodCallHandler(this)
     channels = appendMethodChannel(channels, newChannel)
     context = flutterPluginBinding.applicationContext
@@ -93,7 +93,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
   }
 
-  fun appendMethodChannel(arr: Array<MethodChannel>, element: MethodChannel): Array<MethodChannel> {
+  private fun appendMethodChannel(arr: Array<MethodChannel>, element: MethodChannel): Array<MethodChannel> {
     val array = arr.copyOf(arr.size + 1)
     array[arr.size] = element
 
@@ -103,13 +103,14 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
 
   // 初始化推送服务
   private fun init(call: MethodCall, result: MethodChannel.Result) {
+    val map = call.arguments<Map<String, Any>>()
     try{
       try{
         Log.i(TAG, "init, CPManager: $channelPushManager, activity: ${activity}")
         if(channelPushManager == null){
           channelPushManager = ChannelPushManager.getInstance(activity.applicationContext)
         }
-        channelPushManager!!.initChannel()
+        channelPushManager!!.initChannel(map!!["useHuaweiPushService"] as Boolean)
         isInitializeSuccess = true
         result.success("")
       }catch (e: Exception){
@@ -117,7 +118,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         if(channelPushManager == null){
           channelPushManager = ChannelPushManager.getInstance(context)
         }
-        channelPushManager!!.initChannel()
+        channelPushManager!!.initChannel(map!!["useHuaweiPushService"] as Boolean)
         isInitializeSuccess = true
         result.success("")
       }

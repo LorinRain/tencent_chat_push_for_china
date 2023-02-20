@@ -5,27 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6de31534-b23c-454c-936a-8061cfb7a4ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.dart_tool/package_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/ChannelPushManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/ChannelPushManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/channelUtils/HonorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/channelUtils/HonorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/DeviceInfoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/DeviceInfoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/TimUiKitPushPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/TimUiKitPushPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/tencent_chat_push_for_china.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../../lib/tencent_chat_push_for_china.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C7Y6R19920008030]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[AEUN9X2527W02015]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -36,6 +31,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2LqpJEJrZUastcaY2DVJzZq5WlT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

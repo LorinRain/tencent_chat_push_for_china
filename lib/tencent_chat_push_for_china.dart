@@ -17,11 +17,17 @@ typedef PushClickAction = void Function(Map<String, dynamic> msg);
 
 class TimUiKitPushPlugin extends TencentIMClass {
   static TimUiKitPushPlugin? _instance;
+  static bool _useHuaweiPushService = false;
+
   TimUiKitPushPlugin._internal() {
     _initPlugin();
   }
 
-  factory TimUiKitPushPlugin() {
+  factory TimUiKitPushPlugin({
+    /// 是否使用华为推送通道，此配置只对新荣耀手机生效
+    required bool useHuaweiPushService,
+  }) {
+    _useHuaweiPushService = useHuaweiPushService;
     _instance ??= TimUiKitPushPlugin._internal();
     return _instance!;
   }
@@ -141,7 +147,12 @@ class TimUiKitPushPlugin extends TencentIMClass {
     }
 
     localNotification.init(pushClickAction);
-    await _channel.invokeMethod("initPush");
+    await _channel.invokeMethod(
+      "initPush",
+      {
+        "useHuaweiPushService": _useHuaweiPushService,
+      },
+    );
     return true;
   }
 

@@ -1,3 +1,7 @@
+## 2.3.3
+
+* 新增配置项控制荣耀使用华为推送还是荣耀推送。
+
 ## 2.3.0
 
 * Improve the choose between Huawei and new Honor.

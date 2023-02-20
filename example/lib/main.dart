@@ -77,7 +77,9 @@ class _MyAppState extends State<MyApp> {
 }
 
 class ChannelPush {
-  static final TimUiKitPushPlugin cPush = TimUiKitPushPlugin();
+  static final TimUiKitPushPlugin cPush = TimUiKitPushPlugin(
+    useHuaweiPushService: false,
+  );
 
   static init(PushClickAction pushClickAction) async {
     // initialize the push plugin
