@@ -3,9 +3,11 @@ import 'package:tencent_chat_push_for_china/model/app_info.dart';
 import 'package:tencent_im_base/tencent_im_base.dart';
 
 class Utils {
-  /// Set appinfo for each channel manualy
+  /// Set appInfo for each channel manually
   static Future<void> setAppInfoForChannel(
-      MethodChannel _channel, PushAppInfo appInfo) async {
+    MethodChannel _channel,
+    PushAppInfo appInfo,
+  ) async {
     if (await _channel.invokeMethod("isOppoRom") &&
         appInfo.oppo_app_key != null &&
         appInfo.oppo_app_secret != null) {

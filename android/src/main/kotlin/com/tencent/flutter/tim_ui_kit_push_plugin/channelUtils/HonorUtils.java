@@ -15,9 +15,7 @@ import java.util.TimerTask;
 import java.util.concurrent.FutureTask;
 
 public class HonorUtils implements ChannelBaseUtils {
-    private String TAG = "TUIKitPush | HONOR";
-
-    boolean mIsSupportedBade = true;
+    private final String TAG = "TUIKitPush | HONOR";
 
     static boolean init = false;
 
@@ -30,20 +28,14 @@ public class HonorUtils implements ChannelBaseUtils {
             init = true;
             HonorPushClient.getInstance().init(context, false);
         }
-        boolean isSupport = false;
-        try {
-            HonorPushClient.getInstance().init(context, false);
-            isSupport = HonorPushClient.getInstance().checkSupportHonorPush();
-        } catch (Exception e) {
-            Log.i("TUIKitPush | HONOR", "checkSupportHonorPush failed: " + e.toString());
-        }
+        boolean isSupport = HonorPushClient.getInstance().checkSupportHonorPush();
 
         Log.i("TUIKitPush | HONOR", "checkSupportHonorPush: " + isSupport);
 
         return isSupport;
     }
 
-    private Context context;
+    private final Context context;
 
     String token = "";
 

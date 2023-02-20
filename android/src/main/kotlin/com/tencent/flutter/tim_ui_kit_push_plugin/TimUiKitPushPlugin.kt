@@ -3,6 +3,7 @@ package com.tencent.flutter.tim_ui_kit_push_plugin
 import android.app.Activity
 import android.content.Context
 import androidx.annotation.NonNull
+import com.tencent.flutter.tim_ui_kit_push_plugin.channelUtils.HonorUtils
 import com.tencent.flutter.tim_ui_kit_push_plugin.common.DeviceInfoUtil
 import com.tencent.flutter.tim_ui_kit_push_plugin.common.Extras
 import com.tencent.flutter.tim_ui_kit_push_plugin.common.MainHandler
@@ -22,6 +23,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private var TAG = "TUIKitPush | MAIN"
   private var channelPushManager: ChannelPushManager? = null
   private var isInitializeSuccess:Boolean = false
+  private var useHuaweiPushService: Boolean = false;
 
   constructor() {
     instance = this
@@ -63,6 +65,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       Extras.FOR_FLUTTER_METHOD_SET_OPPO_PUSH_APP_KEY -> setOppoPushAppKey(call, result)
       Extras.FOR_FLUTTER_METHOD_SET_OPPO_PUSH_APP_ID -> setOppoPushAppId(call, result)
       Extras.FOR_FLUTTER_METHOD_GET_MANUFACTURER -> getDeviceManufacturer(call, result)
+      Extras.FOR_FLUTTER_METHOD_GET_PUSH_BRAND -> getPushBrand(call, result)
       Extras.FOR_FLUTTER_METHOD_SET_BADGE_NUM -> setBadgeNum(call, result)
       Extras.FOR_FLUTTER_METHOD_CLEAR_ALL_NOTIFICATION -> clearAllNotification(call, result)
     }
@@ -104,13 +107,14 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   // 初始化推送服务
   private fun init(call: MethodCall, result: MethodChannel.Result) {
     val map = call.arguments<Map<String, Any>>()
+    useHuaweiPushService = map!!["useHuaweiPushService"] as Boolean;
     try{
       try{
         Log.i(TAG, "init, CPManager: $channelPushManager, activity: ${activity}")
         if(channelPushManager == null){
           channelPushManager = ChannelPushManager.getInstance(activity.applicationContext)
         }
-        channelPushManager!!.initChannel(map!!["useHuaweiPushService"] as Boolean)
+        channelPushManager!!.initChannel(useHuaweiPushService)
         isInitializeSuccess = true
         result.success("")
       }catch (e: Exception){
@@ -118,7 +122,7 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         if(channelPushManager == null){
           channelPushManager = ChannelPushManager.getInstance(context)
         }
-        channelPushManager!!.initChannel(map!!["useHuaweiPushService"] as Boolean)
+        channelPushManager!!.initChannel(useHuaweiPushService)
         isInitializeSuccess = true
         result.success("")
       }
@@ -163,6 +167,18 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     result.success(DeviceInfoUtil.getManufacturers())
   }
 
+  // 获取推送品牌
+  private fun getPushBrand(call: MethodCall, result: MethodChannel.Result) {
+    var brand = DeviceInfoUtil.getManufacturers();
+    if ("honor" == brand) {
+      if (useHuaweiPushService || !HonorUtils.checkSupportHonorPush(DeviceInfoUtil.context)) {
+        brand = "huawei"
+      }
+    }
+    Log.i(TAG, "pushBrand: $brand, useHuaweiPushService: $useHuaweiPushService")
+    result.success(brand);
+  }
+
   private fun isFcmRom(call: MethodCall?, result: MethodChannel.Result?) { //        boolean is
   }
 
@@ -186,8 +202,8 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   }
 
   private fun isEmuiRom(call: MethodCall, result: MethodChannel.Result) {
-    Log.i(TAG, "isEmuiRom===" + DeviceInfoUtil.isBrandHuaWei())
-    result.success(DeviceInfoUtil.isBrandHuaWei())
+    Log.i(TAG, "isEmuiRom===" + DeviceInfoUtil.isBrandHuawei())
+    result.success(DeviceInfoUtil.isBrandHuawei())
   }
 
   private fun isMiuiRom(call: MethodCall, result: MethodChannel.Result) {
@@ -246,8 +262,8 @@ class TimUiKitPushPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   private fun createNotificationChannel(call: MethodCall, result: MethodChannel.Result?) {
     val map = call.arguments<Map<String, String>>()
     val channelId = map!![Extras.CHANNEL_ID] as String
-    val channelName = map!![Extras.CHANNEL_NAME] as String
-    val channelDescription = map!![Extras.CHANNEL_DESCRIPTION] as String
+    val channelName = map[Extras.CHANNEL_NAME] as String
+    val channelDescription = map[Extras.CHANNEL_DESCRIPTION] as String
     Log.i(TAG, "创建Android 通知渠道(${channelId}, ${channelName})")
     try {
       DeviceInfoUtil.createChannel(channelId, channelName, channelDescription, activity.applicationContext)

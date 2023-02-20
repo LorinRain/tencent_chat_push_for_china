@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6de31534-b23c-454c-936a-8061cfb7a4ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+    <list default="true" id="390954ea-98ff-4c2f-9d9a-9a1142553a73" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/ChannelPushManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/ChannelPushManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/TimUiKitPushPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/TimUiKitPushPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/channelUtils/HonorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/channelUtils/HonorUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/BadgeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/BadgeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/DeviceInfoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/DeviceInfoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/Extras.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../android/src/main/kotlin/com/tencent/flutter/tim_ui_kit_push_plugin/common/Extras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lib/tencent_chat_push_for_china.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../../lib/tencent_chat_push_for_china.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lib/utils/utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../../lib/utils/utils.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +36,22 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2LqpJEJrZUastcaY2DVJzZq5WlT" />
+  <component name="ProjectId" id="2LzQjKTXEjw7M0TLqNI4skU2Eab" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="android.app.main" />
@@ -114,11 +115,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6de31534-b23c-454c-936a-8061cfb7a4ec" name="Changes" comment="" />
-      <created>1676608392528</created>
+      <changelist id="390954ea-98ff-4c2f-9d9a-9a1142553a73" name="Changes" comment="" />
+      <created>1676871564642</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676608392528</updated>
+      <updated>1676871564642</updated>
     </task>
     <servers />
   </component>

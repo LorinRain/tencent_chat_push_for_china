@@ -1,8 +1,6 @@
 package com.tencent.flutter.tim_ui_kit_push_plugin;
 
 import android.content.Context;
-import android.os.Build;
-import android.text.TextUtils;
 
 import com.tencent.flutter.tim_ui_kit_push_plugin.channelUtils.ChannelBaseUtils;
 import com.tencent.flutter.tim_ui_kit_push_plugin.channelUtils.DefaultUtils;
@@ -66,7 +64,7 @@ public class ChannelPushManager {
             if (DeviceInfoUtil.isMiuiRom()) {
                 Log.i(TAG, "USE xiaomi");
                 channelUtils = new XiaoMiUtils(mContext);
-            } else if (DeviceInfoUtil.isBrandHuaWei()) {
+            } else if (DeviceInfoUtil.isBrandHuawei()) {
                 Log.i(TAG, "USE Huawei");
                 channelUtils = new HuaweiUtils(mContext);
             } else if (DeviceInfoUtil.isBrandHonorUseHuaweiPush()) {

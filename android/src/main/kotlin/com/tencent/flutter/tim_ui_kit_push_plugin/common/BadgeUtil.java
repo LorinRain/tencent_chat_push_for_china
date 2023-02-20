@@ -17,7 +17,7 @@ public class BadgeUtil {
 
     private static final String URI_HUAWEI_BADGE = "content://com.huawei.android.launcher.settings/badge/";
     // 虽然脱离且启动类包名改变为 hihonor，但当前荣耀手机角标访问 uri 还是和之前华为的一样的。
-//    private static final String URI_HONOR_BADGE = "content://com.hihonor.android.launcher.settings/badge/";
+    // private static final String URI_HONOR_BADGE = "content://com.hihonor.android.launcher.settings/badge/";
     private static final String URI_HONOR_BADGE = URI_HUAWEI_BADGE;
     private static final String URI_OPPO_BADGE = "content://com.android.badge/badge";
     private static final String ACTION_VIVO_BADGE = "launcher.action.CHANGE_APPLICATION_NOTIFICATION_NUM";
@@ -64,14 +64,14 @@ public class BadgeUtil {
     }
 
     private static void changeHuaweiBadgeNumReal(final Context context, final int changeNum) {
-        if (DeviceInfoUtil.isBrandHuaWei() || DeviceInfoUtil.isBrandHonor()) {
+        if (DeviceInfoUtil.isBrandHuawei() || DeviceInfoUtil.isBrandHonor()) {
             CommonWorkingThread.getInstance().execute(new Runnable() {
                 @Override
                 public void run() {
                     try {
                         // 2020年底荣耀手机脱离华为，区分角标业务的 provider uri
                         String badgeUri = "";
-                        if (DeviceInfoUtil.isBrandHuaWei()) {
+                        if (DeviceInfoUtil.isBrandHuawei()) {
                             badgeUri = URI_HUAWEI_BADGE;
                         } else if (DeviceInfoUtil.isBrandHonor()) {
                             badgeUri = URI_HONOR_BADGE;
@@ -108,14 +108,14 @@ public class BadgeUtil {
     }
 
     private static void setHuaweiBadgeNumReal(final Context context, final int setNum) {
-        if (DeviceInfoUtil.isBrandHuaWei() || DeviceInfoUtil.isBrandHonor()) {
+        if (DeviceInfoUtil.isBrandHuawei() || DeviceInfoUtil.isBrandHonor()) {
             CommonWorkingThread.getInstance().execute(new Runnable() {
                 @Override
                 public void run() {
                     try {
                         // 2020年底荣耀手机脱离华为，区分角标业务的 provider uri
                         String badgeUri = "";
-                        if (DeviceInfoUtil.isBrandHuaWei()) {
+                        if (DeviceInfoUtil.isBrandHuawei()) {
                             badgeUri = URI_HUAWEI_BADGE;
                         } else if (DeviceInfoUtil.isBrandHonor()) {
                             badgeUri = URI_HONOR_BADGE;
@@ -160,7 +160,7 @@ public class BadgeUtil {
      * @param changeNum 改变的数字，注意为累加；例如先前为5，入参为1，则角标数被设置为6
      */
     public static void changeHuaweiBadgeNum(Context context, int changeNum) {
-        if (DeviceInfoUtil.isBrandHuaWei() || DeviceInfoUtil.isBrandHonor()) {
+        if (DeviceInfoUtil.isBrandHuawei() || DeviceInfoUtil.isBrandHonor()) {
             try {
                 lock.lock();
                 if (badgeHandler == null) {
@@ -185,7 +185,7 @@ public class BadgeUtil {
     }
 
     public static void setHuaweiBadgeNum(Context context, int setNum) {
-        if (DeviceInfoUtil.isBrandHuaWei() || DeviceInfoUtil.isBrandHonor()) {
+        if (DeviceInfoUtil.isBrandHuawei() || DeviceInfoUtil.isBrandHonor()) {
             try {
                 if (badgeHandler == null) {
                     badgeHandler = new BadgeHandler(context.getApplicationContext());

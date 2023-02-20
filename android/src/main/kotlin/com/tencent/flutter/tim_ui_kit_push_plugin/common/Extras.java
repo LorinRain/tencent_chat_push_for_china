@@ -33,10 +33,14 @@ public interface Extras {
     String FOR_FLUTTER_METHOD_IS_FCM_ROM = "isFcmRom";
     String FOR_FLUTTER_METHOD_IS_GOOGLE_ROM = "isGoogleRom";
     String FOR_FLUTTER_METHOD_GET_VERSION = "getPlatformVersion";
+    // 获取手机平台
     String FOR_FLUTTER_METHOD_GET_MANUFACTURER = "getDeviceManufacturer";
+    
+    // 获取推送平台（比如荣耀手机可能返回华为，表示走华为推送）
+    String FOR_FLUTTER_METHOD_GET_PUSH_BRAND = "getPushType";
     String FOR_FLUTTER_METHOD_GET_NOTIFICATION_PERMISSION = "getNotificationPermission";
     String FOR_FLUTTER_METHOD_CLEAR_ALL_NOTIFICATION = "clearAllNotification";
 
-    //调用Flutter的函数名称
+    // 调用Flutter的函数名称
     String PUSH_CLICK_ACTION = "TIMPushClickAction";   //通知点击事件
 }

@@ -73,7 +73,7 @@ class TimUiKitPushPlugin extends TencentIMClass {
         );
         return onClickNotification!(call.arguments.cast<String, dynamic>());
       default:
-        throw UnsupportedError("Unrecongnized Event");
+        throw UnsupportedError("Unrecognized Event");
     }
   }
 
@@ -85,7 +85,9 @@ class TimUiKitPushPlugin extends TencentIMClass {
       final res = await TencentImSDKPlugin.v2TIMManager
           .getOfflinePushManager()
           .setOfflinePushConfig(
-              businessID: businessID?.toDouble() ?? 0, token: token);
+            businessID: businessID?.toDouble() ?? 0,
+            token: token,
+          );
       if (res.code == 0) {
         return true;
       } else {
@@ -127,7 +129,12 @@ class TimUiKitPushPlugin extends TencentIMClass {
       return false;
     }
 
-    if (Platform.isAndroid && await _channel.invokeMethod("isEmuiRom")) {
+    String? otherPushType = await getOtherPushType();
+    bool isUseHuaweiPush = Platform.isAndroid &&
+        (otherPushType == 'huawei' ||
+            (otherPushType == 'honor' && _useHuaweiPushService));
+
+    if (isUseHuaweiPush) {
       /// 因华为需要使用native异步校验，放到这边进行
       print("TUIKitPush | Dart Plugin | USE HUAWEI");
       isUseFlutterPlugin = true;
@@ -135,7 +142,8 @@ class TimUiKitPushPlugin extends TencentIMClass {
     }
 
     debugPrint(
-        "TUIKitPush | DART | INIT, isUseFlutterPlugin: $isUseFlutterPlugin");
+      "TUIKitPush | DART | INIT, isUseFlutterPlugin: $isUseFlutterPlugin",
+    );
     onClickNotification = pushClickAction;
 
     if (isUseFlutterPlugin) {
@@ -275,6 +283,11 @@ class TimUiKitPushPlugin extends TencentIMClass {
 
   /// Get the brand of the manufacturer in lowercase letter format, only works for Android device
   static Future<String?> getOtherPushType() async {
+    return await _channel.invokeMethod("getPushType");
+  }
+
+  /// 获取设备厂商
+  static Future<String?> getDeviceManufacturer() async {
     return await _channel.invokeMethod("getDeviceManufacturer");
   }
 
@@ -284,6 +297,7 @@ class TimUiKitPushPlugin extends TencentIMClass {
     if (Platform.isIOS) {
       return appInfo.apple_buz_id;
     }
+
     String device = await getOtherPushType() ?? "";
     debugPrint("TUIKitPush | Dart | getOtherPushType | device: $device");
     switch (device) {
@@ -324,26 +338,6 @@ class TimUiKitPushPlugin extends TencentIMClass {
         break;
       default:
         return 0;
-        break;
-    }
-
-    if (await _channel.invokeMethod("isOppoRom") &&
-        appInfo.oppo_buz_id != null) {
-      return appInfo.oppo_buz_id;
-    }
-    if (await _channel.invokeMethod("isMiuiRom") && appInfo.mi_buz_id != null) {
-      return appInfo.mi_buz_id;
-    }
-    if (await _channel.invokeMethod("isEmuiRom") && appInfo.hw_buz_id != null) {
-      return appInfo.hw_buz_id;
-    }
-    if (await _channel.invokeMethod("isMeizuRom") &&
-        appInfo.mz_buz_id != null) {
-      return appInfo.mz_buz_id;
-    }
-    if (await _channel.invokeMethod("isVivoRom") &&
-        appInfo.vivo_buz_id != null) {
-      return appInfo.vivo_buz_id;
     }
 
     return 0;

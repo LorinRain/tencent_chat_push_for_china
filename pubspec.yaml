@@ -1,6 +1,6 @@
 name: tencent_chat_push_for_china
 description: 腾讯云IM，消息推送插件（中国大陆版）。支持通过厂商渠道进行离线消息推送，及在线后台创建消息通知。
-version: 2.3.3
+version: 2.3.4
 homepage: "https://www.tencentcloud.com/products/im?from=pub"
 publish_to: none
 

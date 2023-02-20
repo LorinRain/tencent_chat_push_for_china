@@ -1,6 +1,5 @@
 package com.tencent.flutter.tim_ui_kit_push_plugin.common;
 
-import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -9,7 +8,6 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.text.TextUtils;
 
-import com.hihonor.push.sdk.HonorPushClient;
 import com.tencent.flutter.tim_ui_kit_push_plugin.channelUtils.HonorUtils;
 
 import java.io.BufferedReader;
@@ -105,7 +103,9 @@ public class DeviceInfoUtil {
 
     public static boolean isGoogleRom() {
         String property = getSystemProperty("ro.product.vendor.manufacturer");
-        return !TextUtils.isEmpty(property) && property.toLowerCase().contains("google");
+        if (TextUtils.isEmpty(property)) return false;
+        assert property != null;
+        return property.toLowerCase().contains("google");
     }
 
     public static boolean isMiuiRom() {
@@ -115,7 +115,7 @@ public class DeviceInfoUtil {
                 || !TextUtils.isEmpty(property);
     }
 
-    public static boolean isBrandHuaWei() {
+    public static boolean isBrandHuawei() {
         return "huawei".equalsIgnoreCase(Build.MANUFACTURER);
     }
 
