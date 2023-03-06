@@ -50,7 +50,7 @@ class LocalNotification {
         tempMap['ext'] = payload;
         onClickNotification!(tempMap);
       } catch (e) {
-        print("notification error ${e}");
+        print("notification error $e");
       }
     }
   }

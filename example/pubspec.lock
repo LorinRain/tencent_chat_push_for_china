@@ -381,7 +381,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "2.3.2"
+    version: "2.3.5"
   tencent_im_base:
     dependency: transitive
     description:
@@ -490,4 +490,4 @@ packages:
     version: "3.1.1"
 sdks:
   dart: ">=2.18.0 <3.0.0"
-  flutter: ">=3.0.0"
+  flutter: ">=3.7.0"

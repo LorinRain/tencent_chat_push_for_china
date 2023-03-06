@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:tencent_chat_push_for_china/model/app_info.dart';
@@ -29,7 +28,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   uploadBuzIDAndToken() async {
-    int? businessID = await TimUiKitPushPlugin.getBuzId(PushConfig.appInfo);
+    // int? businessID = await TimUiKitPushPlugin.getBuzId(PushConfig.appInfo);
     String token = await ChannelPush.getDeviceToken();
     if (token != "") {
       // Send token and businessID to Tencent Cloud IM Server. Example below:
@@ -42,9 +41,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   void handleClickNotification(Map<String, dynamic> msg) async {
-    String ext = msg['ext'] ?? "";
-    Map<String, dynamic> extMsp = jsonDecode(ext);
-    String convId = extMsp["conversationID"] ?? "";
+    // String ext = msg['ext'] ?? "";
+    // Map<String, dynamic> extMsp = jsonDecode(ext);
+    // String convId = extMsp["conversationID"] ?? "";
     // Here, you can jump to target conversation via `convId`. Example below:
 
     // V2TimConversation? targetConversation =

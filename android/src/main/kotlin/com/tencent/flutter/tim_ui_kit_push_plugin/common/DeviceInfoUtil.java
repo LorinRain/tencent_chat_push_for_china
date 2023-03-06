@@ -119,6 +119,9 @@ public class DeviceInfoUtil {
         return "huawei".equalsIgnoreCase(Build.MANUFACTURER);
     }
 
+    /**
+     * 荣耀手机但是不支持荣耀推送，使用华为推送
+     */
     public static boolean isBrandHonorUseHuaweiPush() {
         return isBrandHonor() && !HonorUtils.checkSupportHonorPush(context);
     }

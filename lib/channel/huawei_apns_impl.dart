@@ -43,8 +43,7 @@ class HuaweiImpl extends FlutterPushBase {
 
   /// [Developers should not use this field directly] Deal with click event from notification via HUAWEI
   void _onHuaweiNotificationOpenedApp(remoteMessage) {
-    debugPrint(
-        "onHUAWEINotificationOpenedApp: " + remoteMessage["extras"].toString());
+    debugPrint("onHUAWEINotificationOpenedApp: ${remoteMessage["extras"]}");
     onClickNotification!(remoteMessage["extras"]);
   }
 
@@ -52,7 +51,7 @@ class HuaweiImpl extends FlutterPushBase {
   void _onHuaweiTokenEvent(String event) {
     /// Requested tokens can be obtained here
     token = event;
-    debugPrint("HuaweiTokenEvent: " + token);
+    debugPrint("HuaweiTokenEvent: $token");
   }
 
   /// [Developers should not use this field directly] Callback when failure on require HUAWEI token

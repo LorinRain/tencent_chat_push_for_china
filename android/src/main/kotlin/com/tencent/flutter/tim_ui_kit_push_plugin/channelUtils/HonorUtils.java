@@ -17,20 +17,14 @@ import java.util.concurrent.FutureTask;
 public class HonorUtils implements ChannelBaseUtils {
     private final String TAG = "TUIKitPush | HONOR";
 
-    static boolean init = false;
-
     public HonorUtils(Context context) {
         this.context = context;
     }
 
     public static boolean checkSupportHonorPush(Context context) {
-        if (!init) {
-            init = true;
-            HonorPushClient.getInstance().init(context, false);
-        }
-        boolean isSupport = HonorPushClient.getInstance().checkSupportHonorPush();
+        boolean isSupport = HonorPushClient.getInstance().checkSupportHonorPush(context);
 
-        Log.i("TUIKitPush | HONOR", "checkSupportHonorPush: " + isSupport);
+        Log.i("TUIKitPush | HONOR", "是否支持荣耀推送: " + isSupport);
 
         return isSupport;
     }
@@ -41,11 +35,6 @@ public class HonorUtils implements ChannelBaseUtils {
 
     @Override
     public void initChannel() {
-        if (init) {
-            Log.i(TAG, "skip init");
-            return;
-        };
-        init = true;
         HonorPushClient.getInstance().init(context, false);
     }
 

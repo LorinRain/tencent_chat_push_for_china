@@ -5,38 +5,38 @@ import 'package:tencent_im_base/tencent_im_base.dart';
 class Utils {
   /// Set appInfo for each channel manually
   static Future<void> setAppInfoForChannel(
-    MethodChannel _channel,
+    MethodChannel channel,
     PushAppInfo appInfo,
   ) async {
-    if (await _channel.invokeMethod("isOppoRom") &&
+    if (await channel.invokeMethod("isOppoRom") &&
         appInfo.oppo_app_key != null &&
         appInfo.oppo_app_secret != null) {
-      await _channel.invokeMethod("setOppoPushAppId", {
+      await channel.invokeMethod("setOppoPushAppId", {
         "appId": appInfo.oppo_app_key!,
       });
-      await _channel.invokeMethod("setOppoPushAppKey", {
+      await channel.invokeMethod("setOppoPushAppKey", {
         "appKey": appInfo.oppo_app_secret!,
       });
       return;
-    } else if (await _channel.invokeMethod("isMiuiRom") &&
+    } else if (await channel.invokeMethod("isMiuiRom") &&
         appInfo.mi_app_id != null &&
         appInfo.mi_app_key != null) {
       print("TUIKitPush | init | setMiPushAppId");
-      await _channel.invokeMethod("setMiPushAppId", {
+      await channel.invokeMethod("setMiPushAppId", {
         "appId": appInfo.mi_app_id!,
       });
       print("TUIKitPush | init | setMiPushAppKey");
-      await _channel.invokeMethod("setMiPushAppKey", {
+      await channel.invokeMethod("setMiPushAppKey", {
         "appKey": appInfo.mi_app_key!,
       });
       return;
-    } else if (await _channel.invokeMethod("isMeizuRom") &&
+    } else if (await channel.invokeMethod("isMeizuRom") &&
         appInfo.mz_app_id != null &&
         appInfo.mz_app_key != null) {
-      await _channel.invokeMethod("setMzPushAppId", {
+      await channel.invokeMethod("setMzPushAppId", {
         "appId": appInfo.mz_app_id!,
       });
-      await _channel.invokeMethod("setMzPushAppKey", {
+      await channel.invokeMethod("setMzPushAppKey", {
         "appKey": appInfo.mz_app_key!,
       });
       return;
