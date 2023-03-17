@@ -66,7 +66,7 @@ public class XiaoMiUtils implements ChannelBaseUtils {
             method.invoke(extraNotification, setNum);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
         }
     }
 
