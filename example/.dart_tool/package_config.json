@@ -231,7 +231,7 @@
     },
     {
       "name": "plain_notification_token",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/plain_notification_token-3ad704ef37ab0f30f8e088085f0f4ecdbb3730c5/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/plain_notification_token-756f5dcab07a7cbd0229e08c68fe2da77649c08c/",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -297,13 +297,13 @@
     },
     {
       "name": "tencent_im_base",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_base-b49515357469e6dcbfbf0646df2f4c7098a1e20a/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_base-cc7f1e45f8275f84f2dcd7b3bdf6dc8fa64e2fb7/",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "tencent_im_sdk_plugin",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-e933aaadca961ffc9d2ba0b369aaa9a643cb555c/",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -380,7 +380,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-04-04T03:44:31.838923Z",
+  "generated": "2023-04-04T03:58:34.691446Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

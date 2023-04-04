@@ -302,8 +302,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "3ad704ef37ab0f30f8e088085f0f4ecdbb3730c5"
-      url: "git@e.coding.net:micropoplar/proj-ourschool/plain_notification_token.git"
+      resolved-ref: "756f5dcab07a7cbd0229e08c68fe2da77649c08c"
+      url: "git@github.com:hellohejinyu/plain_notification_token.git"
     source: git
     version: "0.0.4"
   platform:
@@ -387,8 +387,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: b49515357469e6dcbfbf0646df2f4c7098a1e20a
-      url: "git@e.coding.net:micropoplar/proj-ourschool/tencent_im_base.git"
+      resolved-ref: cc7f1e45f8275f84f2dcd7b3bdf6dc8fa64e2fb7
+      url: "git@github.com:hellohejinyu/tencent_im_base.git"
     source: git
     version: "0.0.55"
   tencent_im_sdk_plugin:
@@ -396,8 +396,8 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c"
-      url: "git@e.coding.net:micropoplar/proj-ourschool/tencent_im_sdk_plugin.git"
+      resolved-ref: e933aaadca961ffc9d2ba0b369aaa9a643cb555c
+      url: "git@github.com:hellohejinyu/tencent_im_sdk_plugin.git"
     source: git
     version: "4.2.1"
   tencent_im_sdk_plugin_platform_interface:

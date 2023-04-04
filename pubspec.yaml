@@ -16,9 +16,9 @@ dependencies:
     git: git@github.com:hellohejinyu/flutter_local_notifications.git
   huawei_push: 6.7.0+300
   plain_notification_token:
-    git: git@e.coding.net:micropoplar/proj-ourschool/plain_notification_token.git
+    git: git@github.com:hellohejinyu/plain_notification_token.git
   tencent_im_base:
-    git: git@e.coding.net:micropoplar/proj-ourschool/tencent_im_base.git
+    git: git@github.com:hellohejinyu/tencent_im_base.git
 
 dev_dependencies:
   flutter_test:
