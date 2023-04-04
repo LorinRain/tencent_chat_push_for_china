@@ -3,19 +3,19 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-52.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-58.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-5.4.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-5.10.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.19"
     },
     {
       "name": "args",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.3.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -123,13 +123,13 @@
     },
     {
       "name": "flutter_local_notifications",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/flutter_local_notifications-3859c6b637bdf3535455a1a900b3b0aea3bbdd19/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/flutter_local_notifications-d02abddd68807952497cc06fa455238c31bcf505/",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "flutter_local_notifications_linux",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-3.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-3.0.0+1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -237,9 +237,9 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.3",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     },
     {
       "name": "process",
@@ -291,7 +291,7 @@
     },
     {
       "name": "tencent_im_sdk_plugin",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-e933aaadca961ffc9d2ba0b369aaa9a643cb555c/",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -368,7 +368,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-03-17T03:32:16.427273Z",
+  "generated": "2023-04-04T03:44:31.674387Z",
   "generator": "pub",
-  "generatorVersion": "2.19.4"
+  "generatorVersion": "2.19.6"
 }
