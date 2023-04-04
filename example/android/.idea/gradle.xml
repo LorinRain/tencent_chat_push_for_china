@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -9,7 +10,7 @@
         <option name="modules">
           <set>
             <option value="$USER_HOME$/.pub-cache/git/flutter_local_notifications-3859c6b637bdf3535455a1a900b3b0aea3bbdd19/android" />
-            <option value="$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-74fb1b35dbe9c78d2c452d7ca31ce1a5a99b2d3c/android" />
+            <option value="$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-e933aaadca961ffc9d2ba0b369aaa9a643cb555c/android" />
             <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300/android" />
             <option value="$PROJECT_DIR$/../../android" />
             <option value="$PROJECT_DIR$" />

@@ -1,2 +1,2 @@
-rootProject.name = 'tim_ui_kit_push_plugin'
-include ':tim_ui_kit_push_plugin'
+rootProject.name = 'tencent_chat_push_for_china'
+include ':tencent_chat_push_for_china'

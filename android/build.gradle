@@ -73,7 +73,7 @@ dependencies {
     implementation 'com.huawei.hms:push:5.0.2.300'
 
     // XIAOMI
-    implementation (name: 'MiPush_SDK_Client_5_0_5-C_3rd', ext: 'aar')
+    implementation (name: 'MiPush_SDK_Client_5_6_2-C_3rd', ext: 'aar')
 
     // MEIZU
     implementation 'com.meizu.flyme.internet:push-internal:4.1.4'
