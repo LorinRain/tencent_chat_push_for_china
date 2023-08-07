@@ -3,25 +3,25 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-52.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-63.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-5.4.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-6.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "args",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.3.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.4.2",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "async",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/async-2.10.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -33,13 +33,13 @@
     },
     {
       "name": "build",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/build-2.3.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/build-2.4.1",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.19"
     },
     {
       "name": "characters",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/characters-1.2.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/characters-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -51,9 +51,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/collection-1.17.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/collection-1.17.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "convert",
@@ -63,13 +63,13 @@
     },
     {
       "name": "crypto",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/crypto-3.0.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.19"
     },
     {
       "name": "csv",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/csv-5.0.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/csv-5.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -99,7 +99,7 @@
     },
     {
       "name": "ffi",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/ffi-2.0.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/ffi-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -113,7 +113,7 @@
       "name": "flutter",
       "rootUri": "file:///Users/Jinyu/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_apns_only",
@@ -129,13 +129,13 @@
     },
     {
       "name": "flutter_local_notifications",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/flutter_local_notifications-3859c6b637bdf3535455a1a900b3b0aea3bbdd19/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/flutter_local_notifications-d02abddd68807952497cc06fa455238c31bcf505/",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "flutter_local_notifications_linux",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-3.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications_linux-3.0.0+1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -149,37 +149,37 @@
       "name": "flutter_test",
       "rootUri": "file:///Users/Jinyu/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_web_plugins",
       "rootUri": "file:///Users/Jinyu/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "glob",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/glob-2.1.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/glob-2.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.15"
+      "languageVersion": "2.19"
     },
     {
       "name": "huawei_push",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/huawei_push-6.10.0+300",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/js-0.6.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/js-0.6.7",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.19"
     },
     {
       "name": "json_annotation",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/json_annotation-4.8.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/json_annotation-4.8.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "lints",
@@ -189,13 +189,13 @@
     },
     {
       "name": "logging",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/logging-1.1.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/logging-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/matcher-0.12.13",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/matcher-0.12.15",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -207,7 +207,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/meta-1.8.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/meta-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -219,15 +219,15 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/path-1.8.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "petitparser",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/petitparser-5.1.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/petitparser-5.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "plain_notification_token",
@@ -243,9 +243,9 @@
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.3",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.5",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "process",
@@ -255,7 +255,7 @@
     },
     {
       "name": "pub_semver",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/pub_semver-2.1.3",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -263,7 +263,7 @@
       "name": "sky_engine",
       "rootUri": "file:///Users/Jinyu/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "source_span",
@@ -321,21 +321,21 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/test_api-0.4.16",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/test_api-0.5.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "timezone",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/timezone-0.9.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/timezone-0.9.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/typed_data-1.3.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     },
     {
       "name": "uuid",
@@ -351,9 +351,9 @@
     },
     {
       "name": "watcher",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/watcher-1.0.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/watcher-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "3.0"
     },
     {
       "name": "xdg_directories",
@@ -363,15 +363,15 @@
     },
     {
       "name": "xml",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/xml-6.2.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/xml-6.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "yaml",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/yaml-3.1.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/yaml-3.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.19"
     },
     {
       "name": "tim_ui_kit_push_plugin_example",
@@ -380,7 +380,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2023-04-04T08:46:21.285865Z",
+  "generated": "2023-08-07T09:20:52.472820Z",
   "generator": "pub",
-  "generatorVersion": "2.19.6"
+  "generatorVersion": "3.0.6"
 }
