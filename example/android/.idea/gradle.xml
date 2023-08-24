@@ -4,17 +4,29 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$USER_HOME$/flutter/packages/flutter_tools/gradle" name="gradle">
+                <projects>
+                  <project path="$USER_HOME$/flutter/packages/flutter_tools/gradle" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/.pub-cache/git/flutter_local_notifications-3859c6b637bdf3535455a1a900b3b0aea3bbdd19/android" />
+            <option value="$USER_HOME$/.pub-cache/git/flutter_local_notifications-d02abddd68807952497cc06fa455238c31bcf505/android" />
             <option value="$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-e933aaadca961ffc9d2ba0b369aaa9a643cb555c/android" />
-            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300/android" />
+            <option value="$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.10.0+300/android" />
             <option value="$PROJECT_DIR$/../../android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$USER_HOME$/flutter/packages/flutter_tools/gradle" />
           </set>
         </option>
       </GradleProjectSettings>

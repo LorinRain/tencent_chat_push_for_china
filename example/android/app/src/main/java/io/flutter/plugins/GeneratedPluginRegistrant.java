@@ -17,22 +17,22 @@ public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     try {
       flutterEngine.getPlugins().add(new com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin());
-    } catch(Exception e) {
+    } catch (Exception e) {
       Log.e(TAG, "Error registering plugin flutter_local_notifications, com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.huawei.hms.flutter.push.PushPlugin());
-    } catch(Exception e) {
+    } catch (Exception e) {
       Log.e(TAG, "Error registering plugin huawei_push, com.huawei.hms.flutter.push.PushPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.tencent.flutter.tim_ui_kit_push_plugin.TimUiKitPushPlugin());
-    } catch(Exception e) {
+    } catch (Exception e) {
       Log.e(TAG, "Error registering plugin tencent_chat_push_for_china, com.tencent.flutter.tim_ui_kit_push_plugin.TimUiKitPushPlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.qq.qcloud.tencent_im_sdk_plugin.tencent_im_sdk_plugin());
-    } catch(Exception e) {
+    } catch (Exception e) {
       Log.e(TAG, "Error registering plugin tencent_im_sdk_plugin, com.qq.qcloud.tencent_im_sdk_plugin.tencent_im_sdk_plugin", e);
     }
   }

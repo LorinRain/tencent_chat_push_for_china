@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/.pub-cache/git/plain_notification_token-16641beca30ac86219a2c4c24650d0f2fb8d5b41" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_apns_only-1.6.0" />
-      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.7.0+300" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/huawei_push-6.10.0+300" />
       <root url="file://$USER_HOME$/.pub-cache/git/tencent_im_sdk_plugin-e933aaadca961ffc9d2ba0b369aaa9a643cb555c" />
       <root url="file://$USER_HOME$/.pub-cache/git/flutter_local_notifications-d02abddd68807952497cc06fa455238c31bcf505" />
-      <root url="file://$USER_HOME$/.pub-cache/git/plain_notification_token-756f5dcab07a7cbd0229e08c68fe2da77649c08c" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

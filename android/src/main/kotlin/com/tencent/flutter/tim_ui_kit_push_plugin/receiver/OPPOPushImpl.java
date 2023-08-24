@@ -10,14 +10,14 @@ public class OPPOPushImpl implements ICallBackResultService {
     public static String oppoToken = "";
 
     @Override
-    public void onRegister(int responseCode, String registerID) {
+    public void onRegister(int responseCode, String registerID, String packageName, String miniPackageName) {
         Log.i(TAG, "onRegister responseCode: " + responseCode + " registerID: " + registerID);
         oppoToken = registerID;
         ChannelPushManager.token = registerID;
     }
 
     @Override
-    public void onUnRegister(int responseCode) {
+    public void onUnRegister(int responseCode, String packageName, String miniProgramPkg) {
         Log.i(TAG, "onUnRegister responseCode: " + responseCode);
     }
 
@@ -37,7 +37,7 @@ public class OPPOPushImpl implements ICallBackResultService {
     }
 
     @Override
-    public void onError(int i, String s) {
+    public void onError(int errorCode, String message, String packageName, String miniProgramPkg) {
 
     }
 }
