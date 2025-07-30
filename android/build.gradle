@@ -43,6 +43,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.tencent.flutter.tim_ui_kit_push_plugin'
     compileSdk 31
 
     compileOptions {

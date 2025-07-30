@@ -3,27 +3,21 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-72.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-85.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
-    },
-    {
-      "name": "_macros",
-      "rootUri": "file:///Users/Jinyu/flutter/bin/cache/dart-sdk/pkg/_macros",
-      "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.5"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-6.7.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/analyzer-7.7.1",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.5"
     },
     {
       "name": "args",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.5.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/args-2.7.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "async",
@@ -39,9 +33,9 @@
     },
     {
       "name": "build",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/build-2.4.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/build-2.4.2",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.6"
     },
     {
       "name": "characters",
@@ -57,19 +51,19 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/collection-1.19.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "convert",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/convert-3.1.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/convert-3.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/crypto-3.0.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/crypto-3.0.6",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -87,7 +81,7 @@
     },
     {
       "name": "dbus",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/dbus-0.7.10",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/dbus-0.7.11",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -111,19 +105,19 @@
     },
     {
       "name": "file",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/file-7.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "fixnum",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/fixnum-1.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/Jinyu/flutter/packages/flutter",
+      "rootUri": "file:///Users/Jinyu/fvm/versions/3.27.3/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -141,7 +135,7 @@
     },
     {
       "name": "flutter_local_notifications",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications-17.2.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/flutter_local_notifications-17.2.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -159,21 +153,21 @@
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///Users/Jinyu/flutter/packages/flutter_test",
+      "rootUri": "file:///Users/Jinyu/fvm/versions/3.27.3/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
       "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/Jinyu/flutter/packages/flutter_web_plugins",
+      "rootUri": "file:///Users/Jinyu/fvm/versions/3.27.3/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "glob",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/glob-2.1.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/glob-2.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.3"
     },
     {
       "name": "huawei_push",
@@ -189,13 +183,13 @@
     },
     {
       "name": "leak_tracker",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/leak_tracker-10.0.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/leak_tracker-10.0.7",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "leak_tracker_flutter_testing",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.8",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -213,13 +207,7 @@
     },
     {
       "name": "logging",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/logging-1.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
-    },
-    {
-      "name": "macros",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/macros-0.1.2-main.4",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/logging-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -243,9 +231,9 @@
     },
     {
       "name": "package_config",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/package_config-2.1.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/package_config-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
     },
     {
       "name": "path",
@@ -267,7 +255,7 @@
     },
     {
       "name": "platform",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/platform-3.1.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/platform-3.1.6",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -279,13 +267,13 @@
     },
     {
       "name": "pub_semver",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/pub_semver-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.4"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/Jinyu/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/Jinyu/fvm/versions/3.27.3/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -303,9 +291,9 @@
     },
     {
       "name": "stack_trace",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/stack_trace-1.11.1",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/stack_trace-1.12.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.4"
     },
     {
       "name": "stream_channel",
@@ -315,9 +303,9 @@
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/string_scanner-1.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.1"
     },
     {
       "name": "tencent_im_base",
@@ -345,9 +333,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/test_api-0.7.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/test_api-0.7.3",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.4"
     },
     {
       "name": "timezone",
@@ -357,13 +345,13 @@
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/typed_data-1.4.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.5"
     },
     {
       "name": "uuid",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/uuid-4.5.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/uuid-4.5.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -375,21 +363,21 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/vm_service-14.2.5",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/vm_service-14.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
     {
       "name": "watcher",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/watcher-1.1.0",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/watcher-1.1.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.1"
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/xdg_directories-1.0.4",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/xdg_directories-1.1.0",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.3"
     },
     {
       "name": "xml",
@@ -399,9 +387,9 @@
     },
     {
       "name": "yaml",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/hosted/pub.dev/yaml-3.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.4"
     },
     {
       "name": "tencent_chat_push_for_china",
@@ -410,10 +398,10 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2024-09-11T10:11:41.430942Z",
+  "generated": "2025-07-30T05:53:36.822718Z",
   "generator": "pub",
-  "generatorVersion": "3.5.2",
-  "flutterRoot": "file:///Users/Jinyu/flutter",
-  "flutterVersion": "3.24.2",
+  "generatorVersion": "3.6.1",
+  "flutterRoot": "file:///Users/Jinyu/fvm/versions/3.27.3",
+  "flutterVersion": "3.27.3",
   "pubCache": "file:///Users/Jinyu/.pub-cache"
 }
