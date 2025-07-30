@@ -1,6 +1,6 @@
 name: tencent_chat_push_for_china
 description: 腾讯云IM，消息推送插件（中国大陆版）。支持通过厂商渠道进行离线消息推送，及在线后台创建消息通知。
-version: 2.3.13
+version: 2.3.14
 homepage: "https://www.tencentcloud.com/products/im?from=pub"
 publish_to: none
 
@@ -15,9 +15,9 @@ dependencies:
   flutter_local_notifications: ^17.2.2
   huawei_push: 6.12.0+302
   plain_notification_token:
-    git: git@github.com:hellohejinyu/plain_notification_token.git
+    git: https://github.com/hellohejinyu/plain_notification_token.git
   tencent_im_base:
-    git: git@github.com:hellohejinyu/tencent_im_base.git
+    git: https://github.com/hellohejinyu/tencent_im_base.git
 
 dev_dependencies:
   flutter_test:
