@@ -19,8 +19,7 @@ dependencies:
       path: flutter-hms-push
   plain_notification_token:
     git: https://github.com/hellohejinyu/plain_notification_token.git
-  tencent_im_base:
-    git: https://github.com/hellohejinyu/tencent_im_base.git
+  tencent_im_base: ^3.3.0
 
 dev_dependencies:
   flutter_test:

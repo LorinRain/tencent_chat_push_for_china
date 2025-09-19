@@ -165,9 +165,9 @@
     },
     {
       "name": "file",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/file-7.0.1",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/file-6.1.4",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "2.12"
     },
     {
       "name": "fixnum",
@@ -279,9 +279,9 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/js-0.7.2",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/js-0.6.7",
       "packageUri": "lib/",
-      "languageVersion": "3.7"
+      "languageVersion": "2.19"
     },
     {
       "name": "json_annotation",
@@ -344,6 +344,12 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "mime_type",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/mime_type-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "package_config",
       "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/package_config-2.2.0",
       "packageUri": "lib/",
@@ -354,6 +360,42 @@
       "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider_android-2.2.18",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider_foundation-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider_platform_interface-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/path_provider_windows-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "petitparser",
@@ -422,12 +464,6 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "sprintf",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/sprintf-7.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "stack_trace",
       "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/stack_trace-1.12.1",
       "packageUri": "lib/",
@@ -452,22 +488,22 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "tencent_im_base",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/git/tencent_im_base-e749afbc2687646e167c308bd9cfbb26eb3b6c04/",
-      "packageUri": "lib/",
-      "languageVersion": "2.15"
-    },
-    {
-      "name": "tencent_im_sdk_plugin",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/git/tencent_im_sdk_plugin-07050a008585252acd96073652c4731c384f13a9/",
+      "name": "tencent_chat_i18n_tool",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/tencent_chat_i18n_tool-2.3.8",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
-      "name": "tencent_im_sdk_plugin_platform_interface",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/tencent_im_sdk_plugin_platform_interface-0.3.6",
+      "name": "tencent_cloud_chat_sdk",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/tencent_cloud_chat_sdk-7.9.5695",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "tencent_im_base",
+      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/tencent_im_base-3.3.775297",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "term_glyph",
@@ -498,12 +534,6 @@
       "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/typed_data-1.4.0",
       "packageUri": "lib/",
       "languageVersion": "3.5"
-    },
-    {
-      "name": "uuid",
-      "rootUri": "file:///Users/lorinnewrain/.pub-cache/hosted/pub.flutter-io.cn/uuid-4.5.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
     },
     {
       "name": "vector_math",
