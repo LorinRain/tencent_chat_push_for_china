@@ -309,13 +309,13 @@
     },
     {
       "name": "tencent_im_base",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_base-a18fdf4a2ac9bf0176ac503481428c9cc6d140c0/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_base-e749afbc2687646e167c308bd9cfbb26eb3b6c04/",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
     {
       "name": "tencent_im_sdk_plugin",
-      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-6ad370f606aa0c8d18c9b0d5b593d36f4932b1eb/",
+      "rootUri": "file:///Users/Jinyu/.pub-cache/git/tencent_im_sdk_plugin-07050a008585252acd96073652c4731c384f13a9/",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -398,7 +398,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2025-07-30T05:53:36.822718Z",
+  "generated": "2025-09-19T03:33:11.301747Z",
   "generator": "pub",
   "generatorVersion": "3.6.1",
   "flutterRoot": "file:///Users/Jinyu/fvm/versions/3.27.3",
