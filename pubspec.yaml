@@ -13,7 +13,10 @@ dependencies:
     sdk: flutter
   flutter_apns_only: 1.6.0
   flutter_local_notifications: ^17.2.2
-  huawei_push: 6.12.0+302
+  huawei_push:
+    git:
+      url: https://github.com/crasowas/hms-flutter-plugin.git
+      path: flutter-hms-push
   plain_notification_token:
     git: https://github.com/hellohejinyu/plain_notification_token.git
   tencent_im_base:
